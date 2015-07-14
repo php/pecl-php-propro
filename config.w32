@@ -1,9 +1,0 @@
-
-ARG_ENABLE("propro", "for propro support", "no");
-
-if (PHP_PROPRO == "yes") {
-		EXTENSION("propro", "php_propro.c");
-
-		AC_DEFINE("HAVE_PROPRO", 1);
-		PHP_INSTALL_HEADERS("ext/propro", "php_propro.h");
-}
